@@ -90,7 +90,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(../img/bg-banner.jpg) top no-repeat;
+        background: url(../img/bg-banner.png) top no-repeat;
         background-size: cover;
         @media (max-width: 500px){
             height: 400px;
