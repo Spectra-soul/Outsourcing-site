@@ -726,7 +726,7 @@
         }
         
         .services .service-item.item-cyan {
-            background: rgba(182, 231, 241, 0.303);
+            background: rgba(182, 231, 241, 0.212);
             border-bottom: 3px solid #0dcaf0;
         }
         
@@ -741,7 +741,7 @@
         }
         
         .services .service-item.item-violet {
-            background:  #c8c5fc5f;
+            background:  #c8c5fc3d;
             border-bottom: 3px solid #827ded;
         }
         
@@ -756,7 +756,7 @@
         }
         
         .services .service-item.item-teal {
-            background: rgba(15, 255, 183, 0.1);
+            background: rgba(15, 255, 183, 0.051);
             border-bottom: 3px solid #20c997;
         }
         
