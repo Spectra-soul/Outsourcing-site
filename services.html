@@ -43,7 +43,7 @@
 <body class="index-page">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
+        
             <!-- Left Side: Logo -->
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.png" alt="Logo">
@@ -64,11 +64,11 @@
                     <li class="nav-item mx-3"><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </div>
+      
     </nav>
 
 
-     <!-- Banner -->
+    <!-- Global Banner -->
     <style>
         .global-banner {
         width: 100%;
@@ -78,19 +78,30 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(./assets/img/banner3.jpeg) top no-repeat;
+        background: url(./assets/img/banner3.jpeg) left center no-repeat;
         background-size: cover;
+
         @media (max-width: 500px){
             height: 400px;
         }
     }
 
+    
     .global-banner-content {
         display: flex; 
         flex-direction: column;
         align-items: center; 
         justify-content: center;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 1s ease, transform 1s ease; 
     }
+
+    .global-banner-content.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 
     .global-banner img{
         height: 90px;
@@ -100,21 +111,31 @@
         }
     }
 
-    .global-banner p{
-        font-size: 36px;
+    .global-banner h3{
+        font-size: 46px;
         color:rgb(255, 255, 255);
         font-weight: bold;
         padding-top: 20px;
         @media(max-width:500px){
-            font-size: 26px;
+            font-size: 38px;
+        }
+    }
+
+    .global-banner p{
+        font-size: 16px;
+        color:rgba(255, 255, 255, 0.668);
+        font-weight: bold;
+        padding-top: 20px;
+        @media(max-width:500px){
+            font-size: 14px;
         }
     }
     </style>
     <section id="" class="global-banner">
         <div class="container">
             <div class="global-banner-content align-items-center justify-content-center">
-                <img src="./assets/img/logo3.png" alt="Logo">
-                <p>Services</p>
+                <h3>Services</h3>
+                <p>HOME / SERVICES</p>
             </div>
         </div>
     </section>
@@ -161,14 +182,6 @@
             </div>
         </div>
     </section>
-    <script>    // HR Line
-        document.addEventListener('DOMContentLoaded', function() {
-            const hrElement = document.getElementById('short');
-            setTimeout(() => {
-                hrElement.classList.add('open');
-            }, 100); 
-            });
-    </script>
     <!-- Services Section -->
 
 
@@ -253,20 +266,11 @@
             </div>
         </div>
     </section>
-    <script>    // HR Line
-        document.addEventListener('DOMContentLoaded', function() {
-            const hrElement = document.getElementById('shorts');
-            setTimeout(() => {
-                hrElement.classList.add('open');
-            }, 100); 
-            });
-    </script>
-    <!-- Services Section -->
     <!-- industries section -->
 
 
     <!-- Service speech -->
-    <section id="" class="service-speech">
+    <section id="" class="service-speech section">
         <div class="container">
             <div class="row gx-0">
                 <div class="col-lg-12 d-flex flex-column justify-content-center">
