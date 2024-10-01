@@ -57,229 +57,209 @@
         </div>
     </nav>
 
-
+    
     <!-- Global Banner -->
     <style>
-        .global-banner {
-           width: 100%;
-           height: 400px;
-           position: relative;
-           padding: 80px 0 60px 0;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           background: url(./assets/img/banner3.jpeg) left center no-repeat;
-           background-size: cover;
+         .global-banner {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            padding: 80px 0 60px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(./assets/img/banner3.jpeg) left center no-repeat;
+            background-size: cover;
 
-           @media (max-width: 500px){
-               height: 400px;
-           }
-       }
+            @media (max-width: 500px){
+                height: 400px;
+            }
+        }
 
-       
-       .global-banner-content {
-           display: flex; 
-           flex-direction: column;
-           align-items: center; 
-           justify-content: center;
-           opacity: 0;
-           transform: translateY(100px);
-           transition: opacity 1s ease, transform 1s ease; 
-       }
+        
+        .global-banner-content {
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(100px);
+            transition: opacity 1s ease, transform 1s ease; 
+        }
 
-       .global-banner-content.visible {
-           opacity: 1;
-           transform: translateY(0);
-       }
+        .global-banner-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
 
-       .global-banner img{
-           height: 90px;
-           padding-top: 20px;
-           @media (max-width: 500px){
-               height: 60px;
-           }
-       }
+        .global-banner img{
+            height: 90px;
+            padding-top: 20px;
+            @media (max-width: 500px){
+                height: 60px;
+            }
+        }
 
-       .global-banner h3{
-           font-size: 46px;
-           color:rgb(255, 255, 255);
-           font-weight: bold;
-           padding-top: 20px;
-           @media(max-width:500px){
-               font-size: 38px;
-           }
-       }
+        .global-banner h3{
+            font-size: 46px;
+            color:rgb(255, 255, 255);
+            font-weight: bold;
+            padding-top: 20px;
+            @media(max-width:500px){
+                font-size: 38px;
+            }
+        }
 
-       .global-banner p{
-           font-size: 16px;
-           color:rgba(255, 255, 255, 0.668);
-           font-weight: bold;
-           padding-top: 20px;
-           @media(max-width:500px){
-               font-size: 14px;
-           }
-       }
-   </style>
+        .global-banner p{
+            font-size: 16px;
+            color:rgba(255, 255, 255, 0.668);
+            font-weight: bold;
+            padding-top: 20px;
+            @media(max-width:500px){
+                font-size: 14px;
+            }
+        }
+    </style>
     <section id="" class="global-banner">
         <div class="container">
             <div class="global-banner-content align-items-center justify-content-center">
-                <h3>Services</h3>
-                <p>HOME / SERVICES</p>
+                <h3>Careers</h3>
+                <p>HOME / CAREERS</p>
             </div>
         </div>
     </section>
+
+
+     <!-- Career Top Section -->
+    <section class="career-top-section py-3 section">
+        <div class="container career-content">
+            <!-- Left column with image -->
+            <div class="img-column">
+                <div class="career-top">
+                    <img src="./assets/img/career-pic.png" alt="Career Image">
+                </div>
+            </div>
+        
+            <!-- Right column with text -->
+            <div class="career-text">
+                <div class="careers-header">Join Our Team!</div>
+                <div class="careers-intro">
+                    We are currently hiring for multiple positions. If you’re interested in becoming part of our team, please submit your resume and relevant details. Our team will review your application and get back to you shortly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-- Career Form -->
+    <section class="career-section">
+        <div class="careers-container">
+            <div class="form-head">Drop Your Details Below</div>
+            <!-- Form -->
+            <form class="careers-form" id="careerForm">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Phone Number*</label>
+                    <input type="tel" id="number" placeholder="Enter your number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pan">PAN Card Number*</label>
+                    <input type="text" id="pan" placeholder="Enter your PAN card number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience*</label>
+                    <select id="experience" required>
+                        <option value="">Select Experience Level</option>
+                        <option value="fresher">Fresher</option>
+                        <option value="0-1">0-1 Years</option>
+                        <option value="1-2">1-2 Years</option>
+                        <option value="2-3">2-3 Years</option>
+                        <option value="3-4">3-4 Years</option>
+                        <option value="4-5">4-5 Years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter your location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="relocate">Willing to Relocate?*</label>
+                    <select id="relocate" required>
+                        <option value="">Select Option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position Applied For*</label>
+                    <input type="text" id="position" placeholder="Enter the position you're applying for" required>
+                </div>
+
+                <!-- Resume Upload -->
+                <div class="resume-upload">
+                    <label for="resume">Upload Resume</label>
+                    <input type="file" id="resume" required>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-div text-center py-4">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+
+            <!-- Error Message -->
+            <div class="error-message" id="errorMessage" style="display:none;">
+                Please fill in all required fields marked with an asterisk (*).
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage" style="display:none;">Thank you for your interest in joining us!</div>
+        </div>
+    </section>
+
 
     
 
-    <!-- Services Section -->
-    <section id="services" class="services section mb-5">
-        <div class="container section-title">
-            <p>Check Our Services<br></p>
-            <hr id="short"/>
-        </div>
-
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 small-section">
-                    <div class="service-item item-cyan position-relative">
-                        <i class="bi bi-headset icon"></i>
-                        <h3>Customer Support</h3>
-                        <p>
-                            Our customer support team offers 24/7 assistance via phone, email, and chat, delivering prompt and effective solutions to enhance client satisfaction and loyalty.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 small-section">
-                    <div class="service-item item-violet position-relative">
-                        <i class="bi bi-server icon"></i>
-                        <h3>Data Management</h3>
-                        <p>
-                            We provide comprehensive data management services, including data entry, processing, and maintenance, ensuring accuracy and easy accessibility for informed decision-making.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 small-section">
-                    <div class="service-item item-teal position-relative">
-                        <i class="bi bi-tools icon"></i>
-                        <h3>Technical Support</h3>
-                        <p>
-                            Our technical support services troubleshoot and resolve client issues efficiently, offering expert guidance on software and hardware inquiries to minimize downtime.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section -->
+    <script>
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const isValid = form.checkValidity(); 
+            if (!isValid) {
+                document.getElementById('errorMessage').style.display = 'block'; 
+                return; 
+            }
+            successMessage.style.display = 'block'; 
+            form.reset(); 
+            document.getElementById('errorMessage').style.display = 'none';
+        });
+    </script>
 
 
-    <!-- Industries Section-->
-    <section id="stats" class="stats section my-5">
-        <div class="container section-title">
-            <p>Industries We Support<br></p>
-            <hr id="shorts"/>
-        </div>
 
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-cart color-blue flex-shrink-0"></i>
-                        <div>
-                            <p>E-commerce</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-heart-pulse color-orange flex-shrink-0" style="color: #ee6c20;"></i>
-                        <div>
-                            <p>Healthcare</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-graph-up color-green flex-shrink-0" style="color: #15be56;"></i>
-                        <div>
-                            <p>Finance</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-broadcast color-pink flex-shrink-0" style="color: #8e0cab;"></i>
-                        <div>
-                            <p>Telecommunications</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-airplane color-pink flex-shrink-0" style="color: #bb0852;"></i>
-                        <div>
-                            <p>Travel and Hospitality</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-shop color-pink flex-shrink-0" style="color: #938309;"></i>
-                        <div>
-                            <p>Retail</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-laptop color-pink flex-shrink-0" style="color: #0b1862;"></i>
-                        <div>
-                            <p>Technology</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-shield-lock color-green flex-shrink-0" style="color: #1f4a0f;"></i>
-                        <div>
-                            <p>Banking & Insurance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- industries section -->
+ 
 
 
-    <!-- Service speech -->
-    <section id="" class="service-speech section">
-        <div class="container">
-            <div class="row gx-0">
-                <div class="col-lg-12 d-flex flex-column justify-content-center">
-                    <div class="service-content">
-                        <p>By partnering with Virtora Services, you gain a dedicated ally focused on optimizing your operations and driving success across these diverse industries.</p>                       
-                        <div class="text-center text-lg-start">
-                            <a href="Contact.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>Contact us today to learn more!</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Speech section-->
+
 
 
     <footer id="footer" class="footer">
-
         <div class="container footer-top">
           <div class="row gy-4">
             <div class="col-lg-5 col-md-6 footer-about">
@@ -321,7 +301,6 @@
             Designed by <a href="https://bootstrapmade.com/">RIPL</a>
           </div>
         </div>
-    
       </footer>
 
     <!-- Scroll Top -->
