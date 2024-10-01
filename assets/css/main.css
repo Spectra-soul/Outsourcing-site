@@ -887,13 +887,282 @@
 
 
 /*-------------------------------------------------------------
-                     Page Start   
+                    Career Page Start   
 ---------------------------------------------------------------*/
+
+/*--------------------------
+    Career Top Section
+--------------------------*/
+        .career-top-section{
+            width:100%;
+        }
+        .career-content {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 15px;
+        }
+
+        .img-column,
+        .career-text {
+            width: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .career-text {
+            border-radius: 0px 10px 10px 0px;
+        }
+
+        .career-top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        /* Text Content Styling */
+        .career-text {
+            background-color: #cce2f152;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+        .careers-header {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #555b75;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            -webkit-background-clip: text;
+            border-bottom: 2px solid #3b7ba2;
+            width: 100%;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .careers-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 992px) {
+            .career-container {
+                display: flex;
+                flex-direction: column;
+            }
+            .img-column,
+            .career-text {
+                width: 100%; 
+            }
+            .img-column img {
+                border-radius: 10px 10px 0px 0px;
+            }
+            .career-text {
+                border-radius: 0px 0px 10px 10px;
+                padding: 30px 15px;
+            }
+      }
+
+
+/*---------------------------
+    Career Form
+----------------------------*/
+ /* Container */
+ .careers-section {
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: auto; 
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center; 
+}
+    /* Container */
+.careers-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: box-shadow 0.5s ease;
+}
+
+.careers-container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #555b75;
+    letter-spacing: 1px;
+        
+}
+
+/* Form */
+.careers-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #3b7ba2;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3b7ba2;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Resume Upload */
+.resume-upload {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-upload input[type="file"]::file-selector-button {
+    margin:5px;
+    padding: 8px 18px;
+    background: #3b7ba2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.resume-upload input[type="file"]::file-selector-button:hover {
+    background-color: #1d5b82;
+    transform: scale(1.03);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 30%;
+    padding: 5px;
+    background: linear-gradient(to right, #3b7ba2, #33b5da);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn:hover {
+    background: #3b7ba2;
+    transform: scale(1.03);
+
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #43d787;
+    margin-top: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.error-message {
+    display: none;
+    color: red; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 1rem; 
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+.careers-container {
+    padding: 20px;
+}
+
+.form-group input,
+.form-group select {
+    font-size: 0.9rem;
+}
+
+.submit-btn {
+    font-size: 1rem;
+    width:50%;
+}
+}
+
+@media(max-width: 850px){
+    .careers-container {
+        margin: 20px;
+    }
+}
 
 /*-------------------------------------------------------------
-                     Page End   
+                    Career Page End   
 ---------------------------------------------------------------*/
 
+
+/*---------------------------------------------------------------
+                    Global Section 
+----------------------------------------------------------------*/
 
 /*--------------------------------
         Global Navbar 
@@ -957,9 +1226,78 @@
         background-color: yellow; 
         color: rgb(2, 5, 38);
     }
-  /*--------------------------------------------------------------
+
+
+
+/*--------------------------------
+        Global Banner
+--------------------------------*/
+    .global-banner {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        padding: 80px 0 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(./assets/img/banner3.jpeg) left center no-repeat;
+        background-size: cover;
+
+        @media (max-width: 500px){
+            height: 400px;
+        }
+    }
+
+    
+    .global-banner-content {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 1s ease, transform 1s ease; 
+    }
+
+    .global-banner-content.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    .global-banner img{
+        height: 90px;
+        padding-top: 20px;
+        @media (max-width: 500px){
+            height: 60px;
+        }
+    }
+
+    .global-banner h3{
+        font-size: 46px;
+        color:rgb(255, 255, 255);
+        font-weight: bold;
+        padding-top: 20px;
+        @media(max-width:500px){
+            font-size: 38px;
+        }
+    }
+
+    .global-banner p{
+        font-size: 16px;
+        color:rgba(255, 255, 255, 0.668);
+        font-weight: bold;
+        padding-top: 20px;
+        @media(max-width:500px){
+            font-size: 14px;
+        }
+    }
+
+    
+
+  /*----------------------------
   # Global Footer
-  --------------------------------------------------------------*/
+ -----------------------------*/
   .footer {
     color: var(--default-color);
     padding-left: 15px;
@@ -1083,9 +1421,9 @@
     color: white;
   }
   
-  /*--------------------------------------------------------------
+  /*----------------------------
   # Scroll Top Button
-  --------------------------------------------------------------*/
+ ------------------------------*/
   .scroll-top {
     position: fixed;
     visibility: hidden;
@@ -1115,14 +1453,11 @@
     visibility: visible;
     opacity: 1;
   }
+
   
-  /*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
-  
-  /*--------------------------------------------------------------
+  /*----------------------------------
   # Global Page Titles & Breadcrumbs
-  --------------------------------------------------------------*/
+  ----------------------------------*/
   .page-title {
     color: var(--default-color);
     background-color: var(--background-color);
@@ -1164,9 +1499,9 @@
     color: color-mix(in srgb, var(--default-color), transparent 70%);
   }
   
-  /*--------------------------------------------------------------
+  /*------------------------------------
   # Global Sections
-  --------------------------------------------------------------*/
+ -------------------------------------*/
   section,
   .section {
     color: var(--default-color);
@@ -1174,7 +1509,29 @@
     padding: 60px 0;
     scroll-margin-top: 98px;
     overflow: clip;
+    
   }
+
+  .section {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+    }
+
+  .section.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.small-section {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.small-section.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
   
   @media (max-width: 1199px) {
   
@@ -1184,12 +1541,12 @@
     }
   }
   
-  /*--------------------------------------------------------------
+  /*--------------------------------
   # Global Section Titles
-  --------------------------------------------------------------*/
+ ---------------------------------*/
   .section-title {
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     position: relative;
   }
   
