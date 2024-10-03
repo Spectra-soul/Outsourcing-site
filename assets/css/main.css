@@ -1424,35 +1424,30 @@
   /*----------------------------
   # Scroll Top Button
  ------------------------------*/
-  .scroll-top {
+ #scroll-top {
+    display: none; 
     position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 99999;
-    background-color: #012970;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    transition: all 0.4s;
-  }
-  
-  .scroll-top i {
-    font-size: 24px;
-    color: var(--contrast-color);
-    line-height: 0;
-  }
-  
-  .scroll-top:hover {
-    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-    color: var(--contrast-color);
-  }
-  
-  .scroll-top.active {
-    visibility: visible;
-    opacity: 1;
-  }
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: larger;
+    border: none;
+    border-radius: 25%;
+    padding: 7px 12px;
+    background-color: #44718c;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#scroll-top i {
+    font-size: 20px;
+}
+
+#scroll-top:hover {
+    opacity: 0.8;
+}
+
 
   
   /*----------------------------------

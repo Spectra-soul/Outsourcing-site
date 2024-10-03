@@ -77,3 +77,19 @@ document.addEventListener('DOMContentLoaded', function() {
       smallsec.forEach(smallsections => {
       observe.observe(smallsections);
   });
+
+
+
+  // Scroll to top
+  const moveToTopBtn = document.getElementById("scroll-top");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            moveToTopBtn.style.display = "block";
+        } else {
+            moveToTopBtn.style.display = "none";
+        }
+    };
+    moveToTopBtn.onclick = function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
