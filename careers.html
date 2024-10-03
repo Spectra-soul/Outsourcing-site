@@ -159,30 +159,34 @@
         <div class="careers-container">
             <div class="form-head">Drop Your Details Below</div>
             <!-- Form -->
-            <form class="careers-form" id="careerForm">
+            <form action="https://api.web3forms.com/submit" method="POST" class="careers-form" id="careerForm">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="352d5103-9b30-4731-87f0-92a2f164f091">
+                
+                <!-- Form Fields -->
                 <div class="form-group">
                     <label for="name">Name*</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="number">Phone Number*</label>
-                    <input type="tel" id="number" placeholder="Enter your number" required>
+                    <input type="tel" id="number" name="phone" placeholder="Enter your number" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="email">Email*</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="pan">PAN Card Number*</label>
-                    <input type="text" id="pan" placeholder="Enter your PAN card number" required>
+                    <input type="text" id="pan" name="pan_card" placeholder="Enter your PAN card number" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="experience">Experience*</label>
-                    <select id="experience" required>
+                    <select id="experience" name="experience" required>
                         <option value="">Select Experience Level</option>
                         <option value="fresher">Fresher</option>
                         <option value="0-1">0-1 Years</option>
@@ -192,45 +196,47 @@
                         <option value="4-5">4-5 Years</option>
                     </select>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" id="location" placeholder="Enter your location" required>
+                    <input type="text" id="location" name="location" placeholder="Enter your location" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="relocate">Willing to Relocate?*</label>
-                    <select id="relocate" required>
+                    <select id="relocate" name="relocate" required>
                         <option value="">Select Option</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="position">Position Applied For*</label>
-                    <input type="text" id="position" placeholder="Enter the position you're applying for" required>
+                    <input type="text" id="position" name="position" placeholder="Enter the position you're applying for" required>
                 </div>
-
+    
                 <!-- Resume Upload -->
                 <div class="resume-upload">
                     <label for="resume">Upload Resume</label>
-                    <input type="file" id="resume" required>
+                    <input type="file" id="resume" name="resume" required>
                 </div>
-
+    
                 <!-- Submit Button -->
                 <div class="submit-div text-center py-4">
                     <button type="submit" class="submit-btn">Submit</button>
                 </div>
             </form>
-
+    
             <!-- Error Message -->
             <div class="error-message" id="errorMessage" style="display:none;">
                 Please fill in all required fields marked with an asterisk (*).
             </div>
-
+    
             <!-- Success Message -->
-            <div class="success-message" id="successMessage" style="display:none;">Thank you for your interest in joining us!</div>
+            <div class="success-message" id="successMessage" style="display:none;">
+                Thank you for your interest in joining us!
+            </div>
         </div>
     </section>
 
@@ -304,7 +310,7 @@
       </footer>
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <button id="scroll-top"><i class="bi bi-arrow-up"></i></button>
 
     <!-- JS Files -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>

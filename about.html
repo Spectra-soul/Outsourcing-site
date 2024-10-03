@@ -400,112 +400,8 @@
     </section>
     
 
-    <!-- Carousel -->
-     <style>
-        .carousel {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 40px;
-            background-color: #f9f9f9;
-        }
-
-        .carousel-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            background-color: #fff; 
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1000px;  
-            margin: 0 auto;
-            align-items: center;
-        }
-
-        .image-container {
-            width: 30%;
-            background-color: #e8e8e8; 
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .text-content {
-            color: #333;
-            max-width: 60% 
-        }
-
-        .text-content h4 {
-        font-size: 20px;
-        font-weight: bold;
-        }
-
-        .text-content p {
-            font-size: 14px;
-            color: #777;
-            text-align: justify;
-        }
-
-        .text-content blockquote {
-        font-size: 16px;
-        color: #555;
-        position: relative;
-        padding-left: 20px;
-        }
-
-        .text-content blockquote:before {
-        content: '“';
-        font-size: 30px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #f0c05a;
-        }
-
-        .text-content blockquote:after {
-        content: '”';
-        font-size: 30px;
-        position: absolute;
-        bottom: 0;
-        right: -10px;
-        color: #f0c05a;
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            border-radius: 50%;
-            padding: 10px;
-        }
-        .carousel-control-prev-icon {
-            filter: invert(60%) sepia(30%) saturate(500%) hue-rotate(180deg);
-        }
-        .carousel-control-next-icon {
-            filter: invert(60%) sepia(30%) saturate(500%) hue-rotate(180deg);
-        }
-
-        @media(max-width: 850px){
-            .carousel-content {
-                flex-direction: column;
-                margin: 20px;
-            }
-            .image-container, .text-content {
-                max-width: 80%;
-            }
-            .text-content h4, .text-content p{
-                text-align: center;
-            }
-
-            blockquote {
-                 text-align:inherit;
-            }
-        }
-    </style>
-    <!-- Services Section -->
-     <style>
+    <!-- Leaders Section -->
+    <style>
         .leaders {
             padding-bottom: 0px;
             margin-bottom: 0px;
@@ -517,10 +413,123 @@
             <hr id="short"/>
         </div>
     </section>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-content">
+
+
+    <!-- Carousel -->
+    <style>
+        .leaders-speech {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+            background-color: #f9f9f9;
+        }
+
+        .leaders-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #fff; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;  
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .image-container {
+            width: 33%;
+            border-radius: 5%;
+            padding-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .text-content {
+            color: #333;
+            max-width: 65%; 
+            padding: 0px 50px;
+        }
+
+        .text-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 14px;
+            color: #5d2323;
+            text-align: justify;
+        }
+
+        .text-content blockquote {
+            font-size: 16px;
+            color: #555;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .text-content blockquote:before {
+            content: '“';
+            font-size: 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #f0c05a;
+        }
+
+        .text-content blockquote:after {
+            content: '”';
+            font-size: 30px;
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+            color: #f0c05a;
+        }
+
+        @media(max-width: 850px){
+            .leaders-content {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .image-container, .text-content {
+                max-width: 100%;
+                padding: 0px 15px;
+            }
+            .image-container {
+                width: 270px;
+                height:250px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                text-align: center;
+                overflow: hidden;
+                margin-top: 10px;
+            }
+            .image-container img{
+                width: 250px;
+                border-radius: 50%;
+            }
+            .second-image {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .text-content h4, .text-content p{
+                text-align: center;
+            }
+
+            blockquote {
+                text-align:inherit;
+            }
+        }
+    </style>
+    <section class="leaders-speech">
+        <div class="">
+            <div class="leaders-item small-section">
+                <div class="leaders-content">
                     <div class="image-container">
                         <img src="./assets/img/about-company-1.jpg" class="d-block" alt="Person Image">
                     </div>
@@ -535,12 +544,9 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="carousel-item">
-                <div class="carousel-content">
-                    <div class="image-container">
-                        <img src="./assets/img/about-company-1.jpg" class="d-block" alt="Person Image">
-                    </div>
+            <br/><br/>
+            <div class="leaders-item small-section">
+                <div class="leaders-content second-image">
                     <div class="text-content">
                         <h4>Suraj Amzare</h4>
                         <p>Co-Founder/Chief Financial Officer</p>
@@ -548,13 +554,15 @@
                             Our mission revolves around revolutionizing the approach businesses take towards outsourcing. As one of the Co-Founders and the Chief Financial Officer, my primary goal is to provide financial tactics that not only empower our clients but also assist them in realizing their expansion aspirations. 
                             <br/><br/>In my view, honesty and openness play a pivotal role in establishing trust. Our team of skilled professionals works hand in hand with our clients to craft tailored solutions that not only foster success but also fortify relationships. Together, we are eagerly embracing new prospects and striving towards accomplishing extraordinary outcomes. 
                         </blockquote>
-                        
+                    </div>
+                    <div class="image-container">
+                        <img src="./assets/img/co-founder2.png" class="d-block" alt="Person Image">
                     </div>
                 </div>
             </div>
-            
-            <div class="carousel-item">
-                <div class="carousel-content">
+            <br/><br/>
+            <div class="leaders-item small-section">
+                <div class="leaders-content">
                     <div class="image-container">
                         <img src="./assets/img/about-company-1.jpg" class="d-block" alt="Person Image">
                     </div>
@@ -569,21 +577,12 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </section>
 
 
-
-      <script>
+    <script>
        
-   </script>
+    </script>
 
 
 
@@ -634,7 +633,8 @@
       </footer>
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <button id="scroll-top"><i class="bi bi-arrow-up"></i></button>
+
 
     <!-- JS Files -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
