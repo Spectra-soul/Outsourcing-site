@@ -190,7 +190,7 @@ body {
     display: flex;
     align-items: center;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -215,6 +215,31 @@ body {
   color: #fff;
 }
 
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f3f5;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+    margin-right: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #013161c9;
+}
+
+.social-icon:hover  i{
+  color: #fff;
+  z-index: 1;
+}
+
 .info h4 {
   margin: 0;
   font-size: 18px;
@@ -229,7 +254,7 @@ body {
 
 .map iframe {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border: none;
 }
 
@@ -313,15 +338,6 @@ textarea {
                 <div class="contact-details small-section">
                     <div class="contact-item">
                         <div class="icon">
-                            <i class="bi bi-geo-alt"></i>
-                        </div>
-                        <div class="info">
-                            <h4>Address</h4>
-                            <p>Vaishnavi city phase 2, <br/>Handewadi Pune, 412308</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
                             <i class="bi bi-telephone"></i>
                         </div>
                         <div class="info">
@@ -338,6 +354,17 @@ textarea {
                             <p>info@virtoraservices.com</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/profile.php?id=61566310476696&mibextid=rS40aB7S9Ucbxw6v"><i class="bi bi-facebook"></i></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/virtoraservices?igsh=dnY5YWZ1dm45MzNv"><i class="bi bi-instagram"></i></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/company/dursun-services/"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.411500252538!2d73.92425807495623!3d18.456319383874804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea7b4f6c9ff7%3A0xcbb3458f3fd96b5f!2sVaishnavi%20City%20Phase%202%2C%20Handewadi%20Pune%2C%20412308!5e0!3m2!1sen!2sin!4v1696318828374!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -350,6 +377,7 @@ textarea {
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                         </div>
+                        <input type="text" name="query" placeholder="Type of query" required>
                         <input type="text" name="subject" placeholder="Subject" required>
                         <textarea name="message" rows="6" placeholder="Message" required></textarea>
                         <button type="submit" class="btn">Send Message</button>
